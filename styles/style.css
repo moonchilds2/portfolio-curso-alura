@@ -14,18 +14,19 @@
 }
 
 .cabecalho{
-    border-bottom:4px solid #22aa25;
-    padding: 25px;
+    border-bottom:0.25rem solid #22aa25; /* rem eh a unidade de medida que se adapta de acordo com as configuracoes presentes no     
+                                              navegador de quem esta exibindo o conteudo html. 1rem = 16px */
+    padding: 1.56rem;
 }
 
 .navegacao-pags{
     display: flex;
-    gap: 80px;
+    gap: 5rem;
     padding: 0 14%;
 }
 
 .link-nav{
-    font-size: 20px;
+    font-size: 1.25rem;
     color:#ffeff1;
     font-weight: bold;
     font-family: 'Montserrat', sans-serif;
@@ -51,31 +52,32 @@ body {
     padding: 6% 15%;
     display: flex; /* centraliza os blocos dentro do elemento pai (conceito flexbox)*/
     align-items: center;
+    gap: 82px;
     justify-content: space-between; /* divide o espaco igualmente entre os elementos filho */
 }
 
 .capa__conteudo {
-    width: 480px;
+    width: 50%;
     display: flex;
     flex-direction: column;
-    gap: 40px; /* dita o espacamento entre os elementos filho */
+    gap: 2.5rem; /* dita o espacamento entre os elementos filho */
     
     
 }
 
 .capa__conteudo__titulo {
-    font-size: 25px;
+    font-size: 1.56rem;
     font-family: 'Krona One', sans-serif;
 }
 
 .capa__conteudo__desc {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Montserrat', sans-serif;
 }
 
 .acesso-redes {
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     text-align: center;
     font-family: 'Krona One', sans-serif;
 }
@@ -84,20 +86,20 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 20px;
-    font-size: 20px;    
+    gap: 1.25rem;
+    font-size: 1.25rem;    
     font-family: 'Krona One', sans-serif;
 }
 
 .link {
     display: flex;
-    gap: 15px;
-    border: 3px solid #FFD2D7;
-    width: 250px;
+    gap: 0.93rem;
+    border: 0.18rem solid #FFD2D7;
+    width: 50%;
     color: #FFD2D7;
     text-align: center;
-    border-radius: 10px;
-    padding: 10px 0; /* Trata-se, da esquerda pra direita, do padding top e bot e depois left e right */
+    border-radius: 0.625rem;
+    padding: 0.625rem 0; /* Trata-se, da esquerda pra direita, do padding top e bot e depois left e right */
     text-decoration: none;
 }
 
@@ -115,24 +117,40 @@ body {
 
 .link:hover {
     background-color: #471d7a;
-    border: 3px solid #ffeff1;
+    border: 0.18rem solid #ffeff1;
 }
 
 .foto{
-    height: 400px;
-    width: 330px;
-    border-radius: 5px;
+    width: 38%;
+    border-radius: 0.31rem;
 }
 
 .rodape {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 0.625rem;
     background-color: #22aa25;
     color: #35155D;
     font-weight: bold;
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: 'Krona One', sans-serif;
-    padding: 20px;
+    padding: 1.25rem;
+}
+
+
+@media (max-width: 1200px) {
+    .capa{
+        flex-direction: column-reverse;
+        width: auto;
+        padding: 5%;
+    }
+
+    .cabecalho{
+        padding: 3%;
+    }
+
+    .navegacao-pags{
+        justify-content: center;
+    }
 }
