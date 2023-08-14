@@ -61,8 +61,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 2.5rem; /* dita o espacamento entre os elementos filho */
-    
-    
 }
 
 .capa__conteudo__titulo {
@@ -152,5 +150,14 @@ body {
 
     .navegacao-pags{
         justify-content: center;
+    }
+}
+
+@media (max-width: 400px){
+    .capa{
+        padding: 3%;
+    }
+    .capa__conteudo{
+        width: 90%;
     }
 }
