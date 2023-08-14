@@ -157,6 +157,9 @@ body {
     .capa{
         padding: 3%;
     }
+    .foto{
+        width: 45%;
+    }
     .capa__conteudo{
         width: 90%;
     }
